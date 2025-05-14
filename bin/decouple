@@ -144,6 +144,9 @@ SCRIPT_DIR=../
 PTH_EXE=R/decouple_pathways.R
 TF_EXE=R/decouple_TF.R
 
+RUN_PATHWAY="TRUE"
+RUN_TF="TRUE"
+
 if [ "$RUN_PATHWAY" = "TRUE" ]; then
     # Run Pathway Inferrence
     Rscript "$SCRIPT_DIR/$PTH_EXE" \
